@@ -9,8 +9,8 @@ export function saludar(nombre = '', genero = '', edad = null, idioma = 'es') {
     };
 
     const titulos = {
-        es: { joven: 'joven', senor: 'Sñr', senora: 'Sñra', senorita: 'señorita' },
-        en: { joven: 'young', senor: 'Mr.', senora: 'Mrs.', senorita: 'Miss' }
+        es: { joven: 'joven,', senor: 'Sñr.', senora: 'Sñra.', senorita: 'señorita,' },
+        en: { joven: 'young,', senor: 'Mr.', senora: 'Mrs.', senorita: 'Miss,' }
     };
 
     // Definir el saludo según la hora del día
@@ -34,11 +34,11 @@ export function saludar(nombre = '', genero = '', edad = null, idioma = 'es') {
     }
 
     if (tratamiento) {
-        saludo += `, ${tratamiento}`;
+        saludo += ` ${tratamiento}`;
     }
 
     if (nombre) {
-        saludo += `, ${nombre}`;
+        saludo += ` ${nombre}`;
     }
 
     return saludo;
